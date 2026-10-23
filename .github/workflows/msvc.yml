@@ -20,6 +20,8 @@ jobs:
         run: |
           echo "Listing MSVC..." && dir /S "C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Redist\MSVC\"
           echo "Listing System32.." && dir "C:\Windows\System32"
+          echo "Listing System64.." && dir "C:\Windows\System64"
+          echo "Listing System.." && dir "C:\Windows\System"
 
       - name: Upload
         uses: actions/upload-artifact@v7
